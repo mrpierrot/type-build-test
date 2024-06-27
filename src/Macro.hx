@@ -18,8 +18,7 @@ class Macro {
 			pos: Context.currentPos(),
 			name: cl.name + "Collection",
 			pack: cl.pack,
-			//kind: TDClass({pack: ["col"],name: "Collection", params: [TPType(itemComplexType)]}),
-			kind: TDClass(null),
+			kind: TDClass({pack: ["col"],name: "Collection", params: [TPType(itemComplexType)]}),
 			fields: [],
 		}
 		var module = Context.getLocalModule();

@@ -1,0 +1,4 @@
+--cmd haxelib newrepo
+--cmd haxelib --always install hlsdl 1.14.0
+--cmd haxelib --always install heaps 2.0.0
+--cmd haxelib --always git hashlink https://github.com/HaxeFoundation/hashlink.git 1.14
