@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Hx: Run Compilation server",
+			"type": "shell",
+			"command": "haxe",
+			"args": [
+				"-v",
+				"--wait",
+				"6000"
+			],
+		},
+		{
+			"label": "Hx: Build",
+			"type": "shell",
+			"command": "haxe",
+			"args": [
+				"build.hxml"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Hx: Run",
+			"type": "shell",
+			"command": "hl",
+			"args": [
+				"build/thor.hl"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Hx: Build And Run",
+			"dependsOn": [
+				"Hx: Build",
+				"Hx: Run"
+			],
+			"dependsOrder": "sequence",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
