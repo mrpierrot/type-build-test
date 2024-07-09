@@ -22,8 +22,6 @@ class Macro {
 			fields: [],
 		}
 		var module = Context.getLocalModule();
-		trace(module);
-		trace(type);
 		Context.defineType(type, module);
 
 		return fields;

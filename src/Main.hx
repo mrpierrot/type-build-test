@@ -1,11 +1,10 @@
 
-//import data.Weapon;
 class Main extends hxd.App{
 
     override function init() {
         super.init();
-        var weapons: data.WeaponCollection = Type.createEmptyInstance(data.WeaponCollection);
-        trace(weapons); 
+        var collectionType = Type.resolveClass("data.WeaponCollection");
+        trace(collectionType);
     }
 
     final override function update(pDt:Float) {
@@ -13,7 +12,6 @@ class Main extends hxd.App{
 	}
     
     static function main() {
-        //var weapon:Weapon = null;
         new Main();
         
     }
