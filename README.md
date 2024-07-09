@@ -39,3 +39,11 @@ In fact I need to access to Weapon and WeaponCollection by a string without the 
 That works find without the compilation cache, but not with it.
 
 I need help for this.
+
+## What I suspect
+
+First time the compilation is done with the compilation cache, the  ```data.WeaponCollection``` is correctly build because the ```Macro.build()``` is called. But after, the ```Macro.build()``` is not called anymore and the reference of ```data.WeaponCollection``` if not ``import`` is lost. 
+
+I tried @:keep and @:keepSub that no nothing (It's not a probleme with DCE)
+
+I don't know how to keep the reference of ```data.WeaponCollection``` in the compilation cache
