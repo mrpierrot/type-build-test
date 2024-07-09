@@ -4,6 +4,7 @@ This project is a demo to point a problem I have with macro and the compilation 
 
 ## Install
 
+- Use Haxe 4.3.4
 - Execute ```haxe setup.hxml```
 
 ## Run
